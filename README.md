@@ -28,5 +28,5 @@ void       write8(uint8_t value);
 // return error status as int and translate it to text
 int        lastError();
 const char *errorText(int error);
+```
 
-```   
