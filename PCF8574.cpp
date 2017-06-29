@@ -47,7 +47,7 @@ void PCF8574::init(uint8_t address, uint8_t sda_pin, uint8_t scl_pin) {
 /* set pin mode to INPUT/OUTPUT                                                        */
 /* *********************************************************************************** */
 void PCF8574::pinMode(uint8_t pin, int mode) {
-    if (pin >=1 && pin <= 8) {
+    if (pin >=0 && pin <= 7) {
         if (mode==INPUT) {
             // set bit in mode mask
             _mode |= (1<<pin);
